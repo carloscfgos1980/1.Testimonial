@@ -1,0 +1,20 @@
+/*//  mixing font size and text color   //*/
+.button{
+    border-radius: 0 0 10% 10%;
+    background-color: $ButtonColor;
+    margin: 0px 20px 10px 20px;
+    height: 250px;
+    text-align: center;
+     ul{
+        padding-top: 130px;
+        li:nth-child(1){
+            @include SizeColor(3.5ch, $TopColorButtonText);
+          text-transform: uppercase;
+    }
+        li:last-child {
+            @include SizeColor (2.5ch, $BackgroundColor);
+          margin-top: 10px;
+          
+    }
+     }   
+}
